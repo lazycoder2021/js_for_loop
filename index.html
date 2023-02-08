@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            border:1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+
+    <p>Array Index -- location of values within array --- always begins with 0</p>
+
+    <p>Array length -- total length of array --- always begins with 1</p>
+
+    <p>this is the reason for undefined issue</p>
+
+    <script>
+
+        var names = ['Thilak', ' Kumar', 'Singh'];
+
+        console.log(names[0])
+        console.log(names.length)
+
+
+        for(i=0;i<=2;i++){
+            console.log(names[i]);
+        }
+
+        for(i=0;i<=2;i++){
+            document.querySelector('.container').innerHTML +=   `<p>${names[i]}</p>`;
+        }
+
+        for(i=0;i<=names.length;i++){
+            document.querySelector('.container').innerHTML +=   `<p>${names[i]}</p>`;
+        }
+
+
+    </script>
+</body>
+</html>
